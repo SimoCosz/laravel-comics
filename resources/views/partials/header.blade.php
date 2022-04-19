@@ -6,15 +6,15 @@
       ],
       [
         'text' => 'Comics',
-        'href' => '#'
+        'href' => '/'
       ],
       [
         'text' => 'Movies',
-        'href' => '#'
+        'href' => '/movies'
       ],
       [
         'text' => 'Tv',
-        'href' => '#'
+        'href' => '/tv'
       ],
       [
         'text' => 'Games',

@@ -12,6 +12,9 @@
   {{-- header --}}
   @include('partials.header')
 
+  {{-- jumbo --}}
+  @include('partials.jumbo')
+
   {{-- main --}}
   @yield('mainContent')
 

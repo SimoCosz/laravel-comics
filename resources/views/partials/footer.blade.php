@@ -145,7 +145,7 @@
 @endphp
 
 <div class="footer">
-  <div class="container container-footer">
+  <div class="container-footer">
     <div class="list-footer">
       <ul>
         @foreach($footerMenu as $value)

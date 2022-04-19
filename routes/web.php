@@ -216,6 +216,14 @@ Route::get('/', function () {
             ],
         ],
     ];
-    return view('home')->with('comics', $comics);
+    return view('comics')->with('comics', $comics);
+});
+
+Route::get('/movies', function () {
+    return view('movie');
+});
+
+Route::get('/tv', function () {
+    return view('tv');
 });
 

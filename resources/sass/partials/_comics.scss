@@ -1,0 +1,48 @@
+.main{
+  background-color: #303030;
+  padding: 40px;
+
+  .comics-container{
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .card{
+      color: white;
+      font-size: 9px;
+      text-transform: uppercase;
+      width: calc((100% / 6) - 10px);
+    }
+
+  } 
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+
+  .btn{
+    background-color: #0482F9;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+  
+    &:hover{
+      box-shadow: 2px 2px 5px black;
+    }
+  }
+}
+.comic-card{
+  
+  img{
+    object-fit: cover;
+    object-position: top center;
+    aspect-ratio: 1/1;
+  }
+}

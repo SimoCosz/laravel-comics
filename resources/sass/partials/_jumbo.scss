@@ -1,0 +1,28 @@
+.jumbo{
+  background-image: url('/img/jumbotron.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  min-width: 1024px;
+  position: relative;
+
+  .btn{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    margin: 0 auto;
+    padding: 8px 10px;
+    border: none;
+    background-color: #0482F9;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover{
+      box-shadow: 2px 2px 5px black;
+    }
+  }
+}
