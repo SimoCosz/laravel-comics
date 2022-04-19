@@ -1,0 +1,117 @@
+.footer{
+  background-image: url('/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .container-footer{
+    color: white;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+
+    .logo-wrapper{
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .list-footer{
+      max-height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      align-items: flex-start;
+
+      .item-wrap{
+        height: max-content;
+        margin: 0 20px;
+      }
+
+      .title{
+        font-weight: 800;
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+
+      .item-footer{
+        color: #aaa;
+        font-size: 12px;
+  
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ul{
+      display: contents;
+    }
+  }
+
+  .social-banner{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    background-color: #303030;
+
+    .social-footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      margin: 0 auto;
+      width: 1024px;
+
+      button{
+        background-color: transparent;
+        border: 2px solid #0482F9;
+        padding: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+        cursor: pointer;
+
+        &:hover{
+          box-shadow: 2px 2px 5px black;
+        }
+      }
+
+      .social-link-banner{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon-wrap-banner{
+          display: flex;
+          gap: 20px;
+          padding: 20px 10px;
+
+          img{
+            object-fit: contain;
+
+            &:hover{
+              -webkit-filter: drop-shadow(2px 2px 2px black );
+            }
+          }
+        }
+
+        span{
+          text-transform: uppercase;
+          font-weight: 900;
+          color: #0482F9;
+
+          &:hover{
+            text-shadow: 2px 2px 5px black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

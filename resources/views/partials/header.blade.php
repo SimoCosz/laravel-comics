@@ -44,10 +44,10 @@
 @endphp
 
 <div class="container nav-cont">
-  <figure class="logo">
-    <img src="../assets/img/dc-logo.png" alt="">
+  <figure class="logo-nav">
+    <img src="{{asset('img/dc-logo.png')}}" alt="">
   </figure>
-  <nav class="list">
+  <nav class="list-nav">
     <ul>
       @foreach($links as $value)
         <li>
