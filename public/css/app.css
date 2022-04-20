@@ -79,10 +79,16 @@ img {
   position: relative;
 }
 
-.jumbo .btn {
+.main {
+  background-color: #303030;
+  padding: 40px;
+  position: relative;
+}
+
+.main .btn-jumbo {
   position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
+  top: 0;
+  transform: translateY(-50%);
   margin: 0 auto;
   padding: 8px 10px;
   border: none;
@@ -94,13 +100,8 @@ img {
   z-index: 999;
 }
 
-.jumbo .btn:hover {
+.main .btn-jumbo:hover {
   box-shadow: 2px 2px 5px black;
-}
-
-.main {
-  background-color: #303030;
-  padding: 40px;
 }
 
 .main .comics-container {

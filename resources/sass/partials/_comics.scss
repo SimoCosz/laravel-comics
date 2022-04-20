@@ -1,6 +1,25 @@
 .main{
   background-color: #303030;
   padding: 40px;
+  position: relative;
+  .btn-jumbo{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 8px 10px;
+    border: none;
+    background-color: #0482F9;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover{
+      box-shadow: 2px 2px 5px black;
+    }
+  }
 
   .comics-container{
     height: 100%;

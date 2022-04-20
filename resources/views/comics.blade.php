@@ -2,6 +2,9 @@
 
 @section('mainContent')
 <main class="main">
+  <div class="container">
+    <button class="btn-jumbo">Current Series</button>
+  </div>
   <div class="container comics-container">
     @foreach($comics as $indice => $value)
       <div class="card">
