@@ -30,5 +30,55 @@
     </figure>
   </div>
 </div>
+<div class="info-comic">
+  <div class="container">
+    <div class="talent-specs">
+      
+      <div class="talent">
+        <h2 class="info__title">Talent</h2>
+        <div class="telente__info">
+          <h4>Art by:</h4>
+          <div class="talent__name">
+            @foreach($comic['artists'] as $value)
+              <a href="">{{$value}},</a>
+            @endforeach
+          </div>
+        </div>
+        <div class="telente__info">
+          <h4>Written by:</h4>
+          <div class="talent__name">
+            @foreach($comic['writers'] as $value)
+              <a href="">{{$value}}</a>
+            @endforeach
+          </div>
+        </div>
+      </div>
+      
+      <div class="specs">
+        <h2 class="info__title">Specs</h2>
+        <div class="specs__info">
+          <h4>Series by:</h4>
+          <div class="specs__type">
+              <a href="">{{$comic['series']}}</a>
+          </div>
+        </div>
+        <div class="specs__info">
+          <h4>U.S. Price:</h4>
+          <div class="">
+              <a href="">{{$comic['price']}}</a>
+          </div>
+        </div>
+        <div class="specs__info">
+          <h4>On Sale Date:</h4>
+          <div class="">
+              <a href="">{{$comic['sale_date']}}</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
 @endsection
 
