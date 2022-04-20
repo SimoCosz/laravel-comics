@@ -392,7 +392,7 @@ img {
 .info-comic {
   background-color: #F6F6F6;
   border-top: 2px solid #E3E3E3;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .info-comic .talent-specs {
@@ -435,5 +435,64 @@ img {
 .info-comic .specs__info .talent__name {
   max-width: 70%;
   color: #00ADDF;
+}
+
+.banner {
+  border-top: 1px solid #D8D8D8;
+}
+
+.banner .banner-container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.banner .banner-container .banner-comic {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 25%;
+  height: 100%;
+  color: #9F9F9F;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+}
+
+.banner .banner-container .banner-comic .image {
+  width: 37px;
+}
+
+.banner .banner-container .banner-comic .image .main-icon {
+  width: 40px;
+  height: 37px;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.banner .banner-container .banner-comic .image .digital {
+  -o-object-position: 4px 1px;
+     object-position: 4px 1px;
+}
+
+.banner .banner-container .banner-comic .image .shop {
+  -o-object-position: -109px 1px;
+     object-position: -109px 1px;
+}
+
+.banner .banner-container .banner-comic .image .locator {
+  -o-object-position: -74px 1px;
+     object-position: -74px 1px;
+}
+
+.banner .banner-container .banner-comic .image .subscrition {
+  -o-object-position: -37px 1px;
+     object-position: -37px 1px;
+}
+
+.banner .banner-container ul {
+  display: contents;
+  list-style: none;
 }
 

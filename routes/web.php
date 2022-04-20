@@ -12,33 +12,7 @@ Route::get('/characters', function () {
 
 Route::get('/comics', function () {
     $comics = config('comics');
-    $links = [
-        [
-          'image' => '/img/buy-comics-digital-comics.png',
-          'text' => 'Digital comics',
-          'href' => '#'
-        ],
-        [
-          'image' => '/img/buy-comics-merchandise.png',
-          'text' => 'Dc merchendise',
-          'href' => '#'
-        ],
-        [
-          'image' => '/img/buy-comics-shop-locator.png',
-          'text' => 'Subscription',
-          'href' => '#'
-        ],
-        [
-          'image' => '/img/buy-comics-subscriptions.png',
-          'text' => 'Comic shop locator',
-          'href' => '#'
-        ],
-        [
-          'image' => '/img/buy-dc-power-visa.svg',
-          'text' => 'Dc power visa',
-          'href' => '#'
-        ],
-    ];
+    $links = config('linksBanner');
     return view('comics')->with('comics', $comics)->with('links', $links);
 })->name('comics.index');
 
@@ -77,8 +51,9 @@ Route::get('/shop', function () {
 Route::get('/comics/{id}', function ($id) {
 
     $comics = config('comics');
+    $links = config('linksBanner');
 
     abort_if(!isset($comics[$id]), 404);
     $detail = $comics[$id];
-        return view('details')->with('comic', $detail);
+        return view('details')->with('comic', $detail)->with('links', $links);
 })->where('id', '[0-9]+')->name('comic.show');

@@ -30,10 +30,10 @@
     </figure>
   </div>
 </div>
+
 <div class="info-comic">
   <div class="container">
     <div class="talent-specs">
-      
       <div class="talent">
         <h2 class="info__title">Talent</h2>
         <div class="telente__info">
@@ -75,9 +75,37 @@
           </div>
         </div>
       </div>
-
     </div>
-    
+  </div>
+  <div class="banner">
+    <div class="container banner-container">
+      <ul>
+          <li class="banner-comic">
+            <a href="">Digital Comics</a>
+            <div class="image">
+              <img class="main-icon digital" src="{{asset('img/cta-icons.png')}}" alt="">
+            </div>
+          </li>
+          <li class="banner-comic">
+            <a href="">Shop Dc</a>
+            <div class="image">
+              <img class="main-icon shop" src="{{asset('img/cta-icons.png')}}" alt="">
+            </div>
+          </li>
+          <li class="banner-comic">
+            <a href="">comic shop locator</a>
+            <div class="image">
+              <img class="main-icon locator" src="{{asset('img/cta-icons.png')}}" alt="">
+            </div>
+          </li>
+          <li class="banner-comic">
+            <a href="">subsription</a>
+            <div class="image">
+              <img class="main-icon subscrition" src="{{asset('img/cta-icons.png')}}" alt="">
+            </div>
+          </li>
+        </ul>
+    </div>
   </div>
 </div>
 @endsection
