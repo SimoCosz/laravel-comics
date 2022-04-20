@@ -3,16 +3,16 @@
 @section('mainContent')
 <main class="main">
   <div class="container comics-container">
-    @foreach($comics as $value)
+    @foreach($comics as $indice => $value)
       <div class="card">
-        <div class="comic-card">
-          <a href="">
+        <a href="{{route('comic.show', ['id' => $indice])}}">
+          <div class="comic-card">
             <figure>
               <img src="{{$value['thumb']}}" alt="">
             </figure>
             <h3>{{$value['title']}}</h3>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
         @endforeach
       </div>

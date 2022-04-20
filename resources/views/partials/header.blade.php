@@ -2,46 +2,48 @@
   $links = [
       [
         'text' => 'Characters',
-        'href' => '#'
+        'href' => 'characters.index'
       ],
       [
         'text' => 'Comics',
-        'href' => '/'
+        'href' => 'comics.index'
       ],
       [
         'text' => 'Movies',
-        'href' => '/movies'
+        'href' => 'movies.index'
       ],
       [
         'text' => 'Tv',
-        'href' => '/tv'
+        'href' => 'tv.index'
       ],
       [
         'text' => 'Games',
-        'href' => '#'
+        'href' => 'games.index'
       ],
       [
         'text' => 'Collectibles',
-        'href' => '#'
+        'href' => 'collectibles.index'
       ],
       [
         'text' => 'Videos',
-        'href' => '#'
+        'href' => 'videos.index'
       ],
       [
         'text' => 'Fans',
-        'href' => '#'
+        'href' => 'fans.index'
       ],
       [
         'text' => 'News',
-        'href' => '#'
+        'href' => 'news.index'
       ],
       [
         'text' => 'Shop',
-        'href' => '#'
+        'href' => 'shop.index'
       ],
     ];
 @endphp
+
+@dump(Request::route()->getName())
 
 <div class="container nav-cont">
   <figure class="logo-nav">
@@ -51,7 +53,7 @@
     <ul>
       @foreach($links as $value)
         <li>
-          <a href="{{$value['href']}}">{{$value['text']}}</a>
+          <a class="{{Request::route()->getName() == $value['href']? 'active' : ''}}" href="{{route($value['href'])}}">{{$value['text']}}</a>
         </li>
       @endforeach
     </ul>
