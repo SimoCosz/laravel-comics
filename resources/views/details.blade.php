@@ -39,16 +39,22 @@
         <div class="telente__info">
           <h4>Art by:</h4>
           <div class="talent__name">
-            @foreach($comic['artists'] as $value)
-              <a href="">{{$value}},</a>
+            @foreach($comic['artists'] as $key => $value)
+              <a href="">{{$value}}</a>
+              @if($key != count($comic['artists'])-1)
+                <span>, </span>
+              @endif  
             @endforeach
           </div>
         </div>
         <div class="telente__info">
           <h4>Written by:</h4>
           <div class="talent__name">
-            @foreach($comic['writers'] as $value)
+            @foreach($comic['writers'] as $key => $value)
               <a href="">{{$value}}</a>
+              @if($key != count($comic['writers'])-1)
+                <span>, </span>
+              @endif  
             @endforeach
           </div>
         </div>
