@@ -136,30 +136,50 @@
       font-weight: bold;
       border-left: 1px solid #D8D8D8;
       border-right: 1px solid #D8D8D8;
-
+      cursor: pointer;
+      
+      
+      
+      
       .image{
         width: 37px;
-
+        
         .main-icon{
           width: 40px;
           height: 37px;
           object-fit: none;
+          transition: 500ms ease-in-out;
+          
         }
-
+        
         .digital{
           object-position: 4px 1px ;
+          
+          &:hover{
+            object-position: 4px -37px ;
+          }
         }
 
         .shop{
           object-position: -109px 1px ;
+
+          &:hover{
+            object-position: -109px -37px ;
+            }
         }
 
         .locator{
           object-position: -74px 1px ;
+          &:hover{
+            object-position: -74px -37px ;
+            }
         }
 
         .subscrition{
           object-position: -37px 1px ;
+          &:hover{
+            object-position: -37px -37px ;
+            }
         }
       }
     }

@@ -43,8 +43,6 @@
     ];
 @endphp
 
-@dump(Request::route()->getName())
-
 <div class="container nav-cont">
   <figure class="logo-nav">
     <img src="{{asset('img/dc-logo.png')}}" alt="">

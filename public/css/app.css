@@ -458,6 +458,7 @@ img {
   font-weight: bold;
   border-left: 1px solid #D8D8D8;
   border-right: 1px solid #D8D8D8;
+  cursor: pointer;
 }
 
 .banner .banner-container .banner-comic .image {
@@ -469,6 +470,7 @@ img {
   height: 37px;
   -o-object-fit: none;
      object-fit: none;
+  transition: 500ms ease-in-out;
 }
 
 .banner .banner-container .banner-comic .image .digital {
@@ -476,9 +478,19 @@ img {
      object-position: 4px 1px;
 }
 
+.banner .banner-container .banner-comic .image .digital:hover {
+  -o-object-position: 4px -37px;
+     object-position: 4px -37px;
+}
+
 .banner .banner-container .banner-comic .image .shop {
   -o-object-position: -109px 1px;
      object-position: -109px 1px;
+}
+
+.banner .banner-container .banner-comic .image .shop:hover {
+  -o-object-position: -109px -37px;
+     object-position: -109px -37px;
 }
 
 .banner .banner-container .banner-comic .image .locator {
@@ -486,9 +498,19 @@ img {
      object-position: -74px 1px;
 }
 
+.banner .banner-container .banner-comic .image .locator:hover {
+  -o-object-position: -74px -37px;
+     object-position: -74px -37px;
+}
+
 .banner .banner-container .banner-comic .image .subscrition {
   -o-object-position: -37px 1px;
      object-position: -37px 1px;
+}
+
+.banner .banner-container .banner-comic .image .subscrition:hover {
+  -o-object-position: -37px -37px;
+     object-position: -37px -37px;
 }
 
 .banner .banner-container ul {
