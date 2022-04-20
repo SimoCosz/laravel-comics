@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -70,7 +74,7 @@ img {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 350px;
   min-width: 1024px;
   position: relative;
 }
@@ -128,6 +132,7 @@ img {
   color: white;
   text-transform: uppercase;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .btn-wrapper .btn:hover {
@@ -140,6 +145,50 @@ img {
   -o-object-position: top center;
      object-position: top center;
   aspect-ratio: 1/1;
+}
+
+.main-banner {
+  background-color: #0482F9;
+}
+
+.main-banner .banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.main-banner .banner-container ul {
+  display: contents;
+  list-style: none;
+}
+
+.main-banner .banner-container .item-banner {
+  padding: 0 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-banner .banner-container .item-banner:hover,
+.main-banner .banner-container .item-banner:hover img {
+  text-shadow: 0 0 10px white;
+  -webkit-filter: drop-shadow(2px 2px 10px white);
+}
+
+.main-banner .banner-container .item-banner .image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.main-banner .banner-container .item-banner .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer {
