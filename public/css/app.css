@@ -23,8 +23,7 @@ ul {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 
 .nav-cont {
@@ -312,5 +311,80 @@ img {
 .footer .social-banner .social-footer .social-link-banner span:hover {
   text-shadow: 2px 2px 5px black;
   cursor: pointer;
+}
+
+.poster-top {
+  width: 100%;
+  height: 70px;
+  background-color: #0482F9;
+  position: relative;
+}
+
+.poster-top img {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+}
+
+.comic__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.comic__container .comic-description {
+  margin: 30px 0;
+  width: 70%;
+}
+
+.comic__container .comic-description .comic__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #003F5E;
+}
+
+.comic__container .comic-description .comic__availability {
+  display: flex;
+  justify-content: space-between;
+  background-color: #55BA59;
+  color: #B9F88A;
+  border-bottom: 2px solid #367739;
+  margin-bottom: 20px;
+}
+
+.comic__container .comic-description .comic__availability .comic__price {
+  flex-grow: 8;
+  padding: 20px;
+}
+
+.comic__container .comic-description .comic__availability .comic__price span {
+  color: white;
+}
+
+.comic__container .comic-description .comic__availability .comic__status {
+  text-transform: uppercase;
+  border-right: 2px solid #367739;
+  padding: 20px;
+}
+
+.comic__container .comic-description .comic__availability .check {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #55BA59;
+  color: white;
+  border: none;
+}
+
+.comic__container .comic__text {
+  color: #5A5555;
+}
+
+.advertisement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-transform: uppercase;
+  color: #003F5E;
 }
 
